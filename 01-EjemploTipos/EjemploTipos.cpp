@@ -29,12 +29,15 @@ assert(-67%14<=120/11);
 assert(7*-3>=(44%10)*-7);
 
 // 5. Datos tipo double
-assert(0.1f * 10.0f==1.0f);
+assert(1e-1 * 1e1==1e0);
+assert(-35e-1+124e-2>=222e-2-6478e-3);
+assert(999e-2/111e-2<=-1e1*-1e0);
+assert(-1289e-3/4!=-322e-3);
 
 // 6. Datos tipo string
-assert(string("Algoritmos")+string(" y")+string(" Estructura")+string(" de")+string(" Datos")==string("Algoritmos y Estructura de Datos"));
-assert(string("UTN")+string(" FRBA")!=string("UTN-FRBA"));
-assert(string("Murciélago").length()>=string("Elefante").length());
-assert(string("C").length()<=string("C++").length());
+assert("Algoritmos"s+" y"s+" Estructura"s+" de"s+" Datos"s=="Algoritmos y Estructura de Datos"s);
+assert("UTN"s+" FRBA"s!="UTN-FRBA"s);
+assert("Murciélago"s.length()>="Elefante"s.length());
+assert("C"s.length()<="C++"s.length());
 
 }
